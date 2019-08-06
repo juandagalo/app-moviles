@@ -1,6 +1,7 @@
 /* Credits for main scripts
 https://codepen.io/Dreamdealer/pen/yEmwd
 https://codepen.io/Dreamdealer/pen/lmkHI
+https://codepen.io/jakeduncan/pen/rJZJMM
 */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
@@ -232,7 +233,8 @@ a{
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #070617;
+  background-color: #FEFEFE;
+  font-family: 'Open Sans', sans-serif;
 }
 .footer .col {
   width: 190px;
@@ -250,7 +252,7 @@ a{
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255,255,255,0.2);
+  color: #666;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -261,7 +263,7 @@ a{
   padding: 0;
 }
 .footer .col ul li {
-  color: #999999;
+  color: #666;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
@@ -277,7 +279,7 @@ a{
 }
 
 .footer .col ul li:hover {
-  color: #ffffff;
+  color: #666;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
