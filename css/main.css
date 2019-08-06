@@ -16,20 +16,20 @@ body {
   line-height: 1;
   position: relative;
 }
-#logo:after {
+/* #logo:after {
   content:"Voluntarios";
   position: absolute;
-}
-#logo:after {
+} */
+/* #logo:after { */
   /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+  /* background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
   background-size: 4px 4px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: -5;
   display: block;
   text-shadow: none;
-}
+} */
 
 @media only screen and (min-width: 768px) {
   #logo{
@@ -38,10 +38,10 @@ body {
     text-shadow: #EDEDED 3px 2px 0;
   }
 
-  #logo:after {
+  /* #logo:after {
     left: 22%;
     top: 3%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) {
@@ -52,10 +52,10 @@ body {
     text-shadow: none;
   }
 
-  #logo:after {
+  /* #logo:after {
     left: -1%;
     top: 3%;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
