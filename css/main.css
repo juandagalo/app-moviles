@@ -6,6 +6,11 @@ body {
   padding: 20px 80px;
   background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
 }
+
+a{
+  text-decoration: none;
+}
+
 #logo {
   font-family: 'Open Sans', sans-serif;
   color: #555;
@@ -53,6 +58,26 @@ body {
   margin-bottom: initial;
 }
 
+.subtitle-center{
+  color: #444;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -.07em;
+  line-height: .9em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: .7em;
+  border-bottom: 4px double #AAA;
+  text-shadow: 
+    1px 1px 0px white,
+    2px 2px 0px #AAA
+    ;
+  position: relative;
+  margin-bottom: initial;
+}
+
+
 .mainText{
   position: relative;
   font-weight: 400;
@@ -85,6 +110,10 @@ body {
   border-bottom: 4px double #999;
 }
 
+.columns{
+  flex-direction: column;
+}
+
 .events::after{
 
   text-align: center;
@@ -105,6 +134,10 @@ body {
   box-shadow: 0 0 0 1px #AAA inset;
   text-transform: uppercase;
 
+}
+
+#inline-list{
+  float: left;
 }
 /* Credits https://codepen.io/Dreamdealer/pen/yEmwd */
 
