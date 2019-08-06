@@ -50,9 +50,62 @@ body {
     2px 2px 0px #AAA
     ;
   position: relative;
+  margin-bottom: initial;
 }
 
+.mainText{
+  position: relative;
+  font-weight: 400;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 1.3em 0 2.4em;
+  border-bottom: 4px double #999;
+}
 
+.box{
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,1);
+  position: relative;
+}
+
+.events{
+  position: relative;
+  font-weight: 400;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 1.3em 0 2.4em;
+  border-bottom: 4px double #999;
+}
+
+.events::after{
+
+  text-align: center;
+  width: 180px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 11px;
+  text-shadow: none;
+  letter-spacing: .2em;
+  content: attr(data-after);
+  bottom: -1em;
+  left: 50%;
+  margin: 0 0 0 -107px;
+  background: #FFF;
+  color: #777;
+  padding: 2px 20px; 
+  line-height: 14px;
+  box-shadow: 0 0 0 1px #AAA inset;
+  text-transform: uppercase;
+
+}
 /* Credits https://codepen.io/Dreamdealer/pen/yEmwd */
 
 #container {
