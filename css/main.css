@@ -17,7 +17,6 @@ body {
   position: relative;
 }
 
-
 @media only screen and (min-width: 768px) {
   #logo{
     font-size: 90px;
@@ -35,14 +34,29 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  /* portrait phones */
+.subtitle{
+  color: #444;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -.07em;
+  line-height: .9em;
+  text-align: left;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: .7em;
+  border-bottom: 4px double #AAA;
+  text-shadow: 
+    1px 1px 0px white,
+    2px 2px 0px #AAA
+    ;
+  position: relative;
 }
+
 
 /* Credits https://codepen.io/Dreamdealer/pen/yEmwd */
 
 #container {
-  max-width: 900px;
+  max-width: 1070px;
   margin: 0 auto;
 }
 #pageList {
