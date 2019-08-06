@@ -115,7 +115,7 @@ a{
   flex-direction: row;
 }
 
-.events::after{
+/* .events::after{
 
   text-align: center;
   width: 180px;
@@ -135,7 +135,7 @@ a{
   box-shadow: 0 0 0 1px #AAA inset;
   text-transform: uppercase;
 
-}
+} */
 
 #inline-list{
   float: left;
@@ -152,89 +152,6 @@ a{
   max-width: 1070px;
   margin: 0 auto;
 }
-#pageList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#pageList li {
-  font-family: 'Open Sans', sans-serif;
-  border-radius: 10px;
-  box-shadow: 0px 2px 3px rgba(0,0,0,.2);
-  margin-bottom: 20px;
-  padding: 20px;
-  background: rgba(255,255,255,1);
-  position: relative;
-}
-#pageList li > a {
-  color: #444;
-  font-size: 38px;
-  font-weight: 800;
-  letter-spacing: -.07em;
-  line-height: .9em;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  padding-bottom: .7em;
-  border-bottom: 4px double #AAA;
-  text-shadow: 
-    1px 1px 0px white,
-    2px 2px 0px #AAA
-    ;
-  position: relative;
-}
-#pageList li > a:after,
-#pageList li p:after {
-  text-align: center;
-  width: 180px;
-  position: absolute;
-  font-weight: 400;
-  font-size: 11px;
-  text-shadow: none;
-  letter-spacing: .2em;
-  content: attr(data-after);
-  bottom: -1em;
-  left: 50%;
-  margin: 0 0 0 -107px;
-  background: #FFF;
-  color: #777;
-  padding: 2px 20px; 
-  line-height: 14px;
-  box-shadow: 0 0 0 1px #AAA inset;
-  text-transform: uppercase;
-}
-#pageList li a:hover {
-  color: #a30d5f;
-}
-#pageList li p {
-  position: relative;
-  font-weight: 400;
-  color: #666;
-  font-size: 16px;
-  line-height: 1.5em;
-  text-align: justify;
-  padding: 1.3em 0 2.4em;
-  border-bottom: 4px double #999;
-}
-#pageList li span {
-  font-size: 14px;
-  font-weight: 300;
-  color: #666;
-}
-#pageList li span a {
-  color: inherit;
-}
-#pageList li .tags:before {
-  content: 'Tags: ';
-}
-#pageList li .tags {
-  float: left;
-}
-#pageList li .comment {
-  float: right;
-}
-
 
 .ribbon {
  font-size: 16px !important;
@@ -283,4 +200,9 @@ a{
 .ribbon .ribbon-content:after {
  right: 0;
  border-width: .8em .8em 0 0;
+}
+
+.image{
+  width: 50%;
+  padding-left: 26%;
 }
