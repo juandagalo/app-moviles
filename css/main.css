@@ -206,3 +206,12 @@ a{
   width: 50%;
   padding-left: 26%;
 }
+
+.image-text-left{
+  float: left;
+  width:50%;
+  height:50%;
+  margin-right:15px;
+  min-width: 30%;
+  min-height: 30%;
+}
