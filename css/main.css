@@ -1,6 +1,7 @@
 /* Credits https://codepen.io/Dreamdealer/pen/yEmwd */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
+
 body {
   padding: 20px 80px;
   background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
@@ -11,18 +12,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: 90px;
-  font-weight: 800;
   letter-spacing: -3px;
   line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
   position: relative;
 }
 #logo:after {
   content:"Voluntarios";
   position: absolute;
-  left: 8px;
-  top: 14px;
 }
 #logo:after {
   /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
@@ -34,4 +30,173 @@ body {
   display: block;
   text-shadow: none;
 }
+
+@media only screen and (min-width: 768px) {
+  #logo{
+    font-size: 90px;
+    font-weight: 800;
+    text-shadow: #EDEDED 3px 2px 0;
+  }
+
+  #logo:after {
+    left: 22%;
+    top: 3%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  #logo{
+    font-size: 178%;
+    font-weight: 800;
+    text-shadow: none;
+  }
+
+  #logo:after {
+    left: -1%;
+    top: 3%;
+  }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */
+}
+
 /* Credits https://codepen.io/Dreamdealer/pen/yEmwd */
+
+#container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#pageList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#pageList li {
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,1);
+  position: relative;
+}
+#pageList li > a {
+  color: #444;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -.07em;
+  line-height: .9em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding-bottom: .7em;
+  border-bottom: 4px double #AAA;
+  text-shadow: 
+    1px 1px 0px white,
+    2px 2px 0px #AAA
+    ;
+  position: relative;
+}
+#pageList li > a:after,
+#pageList li p:after {
+  text-align: center;
+  width: 180px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 11px;
+  text-shadow: none;
+  letter-spacing: .2em;
+  content: attr(data-after);
+  bottom: -1em;
+  left: 50%;
+  margin: 0 0 0 -107px;
+  background: #FFF;
+  color: #777;
+  padding: 2px 20px; 
+  line-height: 14px;
+  box-shadow: 0 0 0 1px #AAA inset;
+  text-transform: uppercase;
+}
+#pageList li a:hover {
+  color: #a30d5f;
+}
+#pageList li p {
+  position: relative;
+  font-weight: 400;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: justify;
+  padding: 1.3em 0 2.4em;
+  border-bottom: 4px double #999;
+}
+#pageList li span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #666;
+}
+#pageList li span a {
+  color: inherit;
+}
+#pageList li .tags:before {
+  content: 'Tags: ';
+}
+#pageList li .tags {
+  float: left;
+}
+#pageList li .comment {
+  float: right;
+}
+
+
+.ribbon {
+ font-size: 16px !important;
+ width: 100%;
+ position: relative;
+  lefT: -2em;
+ background: #FEFEFE;
+ text-align: center;
+ padding: 1em 2em;
+ margin: 2em auto .3em;
+  box-shadow: 0 0 0 1px #DDD inset, 0px 5px 20px 0px rgba(0,0,0,.3);
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1.2em;
+ border: 1.5em solid #BBB;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+.ribbon .ribbon-content {
+ overflow: hidden; 
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #888 transparent transparent transparent;
+ bottom: -.8em;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: .8em 0 0 .8em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: .8em .8em 0 0;
+}
