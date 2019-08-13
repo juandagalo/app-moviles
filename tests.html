@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="css/main.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="body">
+    <input type="text" placeholder="Número 1" id="n1">
+    <input type="text" placeholder="Número 2" id="n2">
+    <button onclick="sumar()">Sumar</button>
+    <input type="text" disabled id="resultado">
+    <br><br><br><br><br>
+    <table style="width:100%">
+        <tr>
+            <th><input type="button" class="button-game" id="p11" onclick="moveNumber(this)"></th>
+            <th><input type="button" class="button-game" id="p12" onclick="moveNumber(this)"></th>
+            <th><input type="button" class="button-game" id="p13" onclick="moveNumber(this)"></th>
+        </tr>
+        <tr>
+            <th><input type="button" class="button-game" id="p21" onclick="moveNumber(this)"></th>
+            <th><input type="button" class="button-game" id="p22" onclick="moveNumber(this)"></th>
+            <th><input type="button" class="button-game" id="p23" onclick="moveNumber(this)"></th>
+        </tr>
+        <tr>
+            <th><input type="button" class="button-game" id="p31" onclick="moveNumber(this)"></th>
+            <th><input type="button" class="button-game" id="p32" onclick="moveNumber(this)"></th>
+            <th><input type="button" class="button-game" id="p33" onclick="moveNumber(this)"></th>
+        </tr>
+    </table> 
+    <input type="text" disabled id="ganador">
+
+    <!-- <button onclick="check()">check</button> -->
+    <button onclick="desordenar()">Desordenar</button>
+</body>
+</html>
